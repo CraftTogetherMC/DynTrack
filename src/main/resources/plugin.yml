@@ -1,0 +1,193 @@
+name: DynTrack
+version: ${project.version}
+main: de.odinoxin.dyntrack.DynTrack
+authors: [OdinOxin, GameClubMuenster]
+maintainer: [J0schlZ]
+depend: [GuidesPlugin, dynmap]
+softdepend: [Vault, Multiverse-Core]
+api-version: 1.18
+commands:
+ dynTrack:
+  description: "The command for DynTrack"
+ dynTr:
+  description: "The short command for DynTrack"
+
+permssions:
+
+ dyntrack.*:
+  default: op
+  children:
+   dyntrack.create.*: true
+   dyntrack.edit.*: true
+   dyntrack.del.*: true
+   dyntrack.info.*: true
+
+ dyntrack.create.*:
+  default: op
+  children:
+   dyntrack.create.style: true
+   dyntrack.create.layer: true
+   dyntrack.create.path: true
+   dyntrack.create.square: true
+   dyntrack.create.link: true
+   dyntrack.create.edit.*: true
+   dyntrack.create.del.*: true
+   dyntrack.create.info.*: true
+
+ dyntrack.create.style:
+  default: op
+  children:
+   dyntrack.edit.style: true
+   dyntrack.del.style: true
+
+ dyntrack.create.layer:
+  default: op
+  children:
+   dyntrack.edit.layer: true
+   dyntrack.del.layer: true
+
+ dyntrack.create.path:
+  default: op
+  children:
+   dyntrack.edit.path: true
+   dyntrack.del.path: true
+
+ dyntrack.create.square:
+  default: op
+  children:
+   dyntrack.edit.square: true
+   dyntrack.del.square: true
+
+ dyntrack.create.link:
+  default: op
+  children:
+   dyntrack.edit.link: true
+   dyntrack.del.link: true
+
+ dyntrack.edit.*:
+  default: op
+  children:
+   dyntrack.edit.style: true
+   dyntrack.edit.layer: true
+   dyntrack.edit.path: true
+   dyntrack.edit.square: true
+   dyntrack.edit.link: true
+   dyntrack.edit.config: true
+
+ dyntrack.edit.style:
+  default: op
+
+ dyntrack.edit.layer:
+  default: op
+
+ dyntrack.edit.path:
+  default: op
+
+ dyntrack.edit.square:
+  default: op
+
+ dyntrack.edit.link:
+  default: op
+
+ dyntrack.edit.config:
+  default: op
+  children:
+   dyntrack.reload: true
+
+ dyntrack.reload:
+  default: op
+
+ dyntrack.del.*:
+  default: op
+  children:
+   dyntrack.del.style: true
+   dyntrack.del.layer: true
+   dyntrack.del.path: true
+   dyntrack.del.square: true
+   dyntrack.del.link: true
+
+ dyntrack.del.style:
+  default: false
+
+ dyntrack.del.layer:
+  default: false
+
+ dyntrack.del.path:
+  default: false
+
+ dyntrack.del.square:
+  default: false
+
+ dyntrack.del.link:
+  default: false
+
+ dyntrack.info.*:
+  default: op
+  children:
+   dyntrack.info.plugin: true
+   dyntrack.info.help: true
+   dyntrack.info.intro: true
+   dyntrack.info.list.*: true
+   dyntrack.info.element.*: true
+
+ dyntrack.info.plugin:
+  default: op
+
+ dyntrack.info.help:
+  default: op
+
+ dyntrack.info.intro:
+  default: op
+  children:
+   dyntrack.info.intro.noauto: false
+
+ dyntrack.info.intro.noauto:
+  default: op
+
+ dyntrack.info.list.*:
+  default: op
+  children:
+   dyntrack.info.list.style: true
+   dyntrack.info.list.layer: true
+   dyntrack.info.list.path: true
+   dyntrack.info.list.square: true
+   dyntrack.info.list.link: true
+
+ dyntrack.info.list.style:
+  default: op
+
+ dyntrack.info.list.layer:
+  default: op
+
+ dyntrack.info.list.path:
+  default: op
+
+ dyntrack.info.list.square:
+  default: op
+
+ dyntrack.info.list.link:
+  default: op
+
+ dyntrack.info.element.*:
+  default: op
+  children:
+   dyntrack.info.element.style: true
+   dyntrack.info.element.layer: true
+   dyntrack.info.element.path: true
+   dyntrack.info.element.square: true
+   dyntrack.info.element.link: true
+
+ dyntrack.info.element.style:
+  default: op
+
+ dyntrack.info.element.layer:
+  default: op
+
+ dyntrack.info.element.path:
+  default: op
+
+ dyntrack.info.element.square:
+  default: op
+
+ dyntrack.info.element.link:
+  default: op

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<path>
+	<id>Default</id>
+	<infobox>
+		<name>
+			<val></val>
+			<syn>Path</syn>
+			<hide>false</hide>
+		</name>
+		<from>
+			<val></val>
+			<syn>From</syn>
+			<hide>false</hide>
+		</from>
+		<to>
+			<val></val>
+			<syn>To</syn>
+			<hide>false</hide>
+		</to>
+		<via>
+			<syn>Via</syn>
+			<hide>false</hide>
+		</via>
+	</infobox>
+	<connected>false</connected>
+	<world>world</world>
+	<loclist>
+	</loclist>
+	<style></style>
+	<layer></layer>
+</path>

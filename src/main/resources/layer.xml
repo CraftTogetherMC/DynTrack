@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer>
+	<id>Default</id>
+	<infobox>
+		<name>Default</name>
+		<hide>false</hide>
+	</infobox>
+	<dynmap>
+		<minzoom>0</minzoom>
+		<priority>0</priority>
+		<hide>false</hide>
+	</dynmap>
+</layer>

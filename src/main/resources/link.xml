@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link>
+	<id>Default</id>
+	<infobox>
+		<name></name>
+		<syn>Link</syn>
+		<hide>false</hide>
+	</infobox>
+	<dynmap>
+		<hide>false</hide>
+		<edging>false</edging>
+	</dynmap>
+	<location></location>
+	<style></style>
+	<layer></layer>
+	<linked>
+	</linked>
+</link>

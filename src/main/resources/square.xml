@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<square>
+	<id>Default</id>
+	<infobox>
+		<name></name>
+		<syn>Square</syn>
+		<hide>false</hide>
+	</infobox>
+	<world>world</world>
+	<loclist>
+	</loclist>
+	<style></style>
+	<layer></layer>
+</square>
